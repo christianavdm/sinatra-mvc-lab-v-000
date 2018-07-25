@@ -21,4 +21,8 @@ class PigLatinizer
   #      put consonants on end of word and add "ay"
 
   end
+
+  def vowel?
+    self.downcase == "a" || self.downcase == "e" || self.downcase == "i" || self.downcase == "o" || self.downcase == "u"
+  end
 end
