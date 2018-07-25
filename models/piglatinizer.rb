@@ -14,6 +14,7 @@ class PigLatinizer
   def piglatinize(word)
     letters = word.split('')
     piglatinized_word = word
+    binding.pry
     if vowel?(letters.first)
       piglatinized_word << "way"
     else
