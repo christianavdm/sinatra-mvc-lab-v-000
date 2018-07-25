@@ -29,7 +29,7 @@ class PigLatinizer
       piglatinized_word << "ay"
     end
 
-    word
+    piglatinized_word
 
   end
 
