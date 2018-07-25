@@ -2,10 +2,6 @@ require 'pry'
 class PigLatinizer
   attr_reader :text
 
-  def initialize(text)
-      @text = text.downcase
-  end
-
   def piglatinizesentence
     words = text.split(" ")
     if words.count > 1
