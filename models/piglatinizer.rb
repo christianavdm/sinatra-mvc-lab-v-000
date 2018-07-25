@@ -23,9 +23,12 @@ class PigLatinizer
 #      while !vowel?(letter)
 #        letters.each{|l| vowel?(l) }
   #      put consonants on end of word and add "ay"
-    until vowel?(letters[0])
-      consonants << letters[0]
-      letters.delete_at[0]
+      until vowel?(letters[0])
+        consonants << letters[0]
+        letters.delete_at[0]
+      end
+      piglatinized_word << consonants 
+      piglatinized_word << "ay"
     end
 
     word
@@ -35,4 +38,5 @@ class PigLatinizer
   def vowel?(letter)
     letter.downcase == "a" || letter.downcase == "e" || letter.downcase == "i" || letter.downcase == "o" || letter.downcase == "u"
   end
+  
 end
