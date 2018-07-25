@@ -13,7 +13,6 @@ class PigLatinizer
 
   def piglatinize(word)
     letters = word.split('')
-    consonants = nil
     piglatinized_word = word
     if vowel?(letters.first)
       piglatinized_word << "way"
