@@ -5,11 +5,20 @@ class PigLatinizer
       @text = text.downcase
   end
 
-  def piglatinize
+  def piglatinizesentence
     words = text.split(" ")
-    if words.count > 1 
+    if words.count > 1
       words.each
+    else
+      text.piglatinize
+    end
   end
 
-  def 
+  def piglatinize
+  #  if starts with vowel
+  #      add "way" to the end
+  #  elsif starts with consonant
+  #      put consonants on end of word and add "ay"
+
+  end
 end
