@@ -15,12 +15,12 @@ class PigLatinizer
   end
 
   def piglatinize
-    if self.vowel?
+    first_letter =
+    if first_letter.vowel?
       self << "way"
-  #      add "way" to the end
-  #  elsif starts with consonant
+    else
   #      put consonants on end of word and add "ay"
-
+    end
   end
 
   def vowel?
