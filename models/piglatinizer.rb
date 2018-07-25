@@ -18,10 +18,9 @@ class PigLatinizer
     if vowel?(letters.first)
       piglatinized_word << "way"
     else
-      binding.pry
-      letter = nil
-      while !vowel?(letter)
-        letters.each{|l| vowel?(l) }
+#      letter = nil
+#      while !vowel?(letter)
+#        letters.each{|l| vowel?(l) }
   #      put consonants on end of word and add "ay"
     end
 
