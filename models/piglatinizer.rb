@@ -11,8 +11,7 @@ class PigLatinizer
     end
   end
 
-  def piglatinize
-    word = self
+  def piglatinize(word)
     first_letter = word.split('').first
     binding.pry
     if first_letter.vowel?
