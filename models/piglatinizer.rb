@@ -13,8 +13,8 @@ class PigLatinizer
 
   def piglatinize(word)
     first_letter = word.split('').first
-    binding.pry
     if vowel?(first_letter)
+      
     else
   #      put consonants on end of word and add "ay"
     end
