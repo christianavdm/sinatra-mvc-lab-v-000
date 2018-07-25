@@ -23,9 +23,9 @@ class PigLatinizer
 #      while !vowel?(letter)
 #        letters.each{|l| vowel?(l) }
   #      put consonants on end of word and add "ay"
-    counter = 0
-    until vowel?(letters[counter])
-
+    until vowel?(letters[0])
+      consonants << letters[0]
+      letters.delete_at[0]
     end
 
     word
