@@ -23,6 +23,7 @@ class PigLatinizer
         consonants << letters[0]
         letters.delete_at(0)
       end
+      piglatinized_word = letters.join
       piglatinized_word << consonants
       piglatinized_word << "ay"
     end
