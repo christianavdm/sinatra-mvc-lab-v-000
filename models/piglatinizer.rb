@@ -4,11 +4,9 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
-    if words.count > 1
-      words.each
-    else
-      text.piglatinize
-    end
+    piglatinized_words = []
+    words.each{|word| piglatinized_words << piglatinize_word(word)}
+    piglatinized_words.join(" ")
   end
 
   def piglatinize_word(word)
