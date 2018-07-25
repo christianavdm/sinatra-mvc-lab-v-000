@@ -18,6 +18,7 @@ class PigLatinizer
   def piglatinize
     word = self
     first_letter = word.split('').first
+    binding.pry
     if first_letter.vowel?
       word << "way"
     else
