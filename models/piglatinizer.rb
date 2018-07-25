@@ -2,7 +2,7 @@ require 'pry'
 class PigLatinizer
   attr_reader :text
 
-  def piglatinizesentence
+  def piglatinize(text)
     words = text.split(" ")
     if words.count > 1
       words.each
