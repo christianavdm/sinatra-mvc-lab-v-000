@@ -18,6 +18,7 @@ class PigLatinizer
     if vowel?(letters.first)
       piglatinized_word << "way"
     else
+      consonants = letters[0]
       until vowel?(letters[0])
         consonants << letters[0]
         letters.delete_at[0]
