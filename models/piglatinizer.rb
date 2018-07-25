@@ -22,6 +22,9 @@ class PigLatinizer
     else
   #      put consonants on end of word and add "ay"
     end
+
+    word
+
   end
 
   def vowel?
